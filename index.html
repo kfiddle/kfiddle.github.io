@@ -3,9 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>This will be my site</title>
+    <title>Ken Johnston Software</title>
+    <link rel="stylesheet" href="layout.css" />
   </head>
+
   <body>
-    <h1>Let's see if random titles appear</h1>
+    <header>
+      <h1>Ken Johnston</h1>
+      <span>Software Development</span>
+    </header>
+
+    <nav>
+      <a href="#aboutMe">About me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="aboutMe">
+        <img class="headShot" src="assets\kj 6.jpg" alt="shot of me" />
+        <h2>About Me</h2>
+        <p>
+          Until recently, I spent each day as a professional violin player
+          immersed in a centuries-old world. I spent thousands of hours with a
+          piece of technology built around the year 1800, and with it I explored
+          a world of language and ideas stretching back even further. I even
+          used to joke that my analog brain couldn't function without paper and
+          pencil.
+        </p>
+        <p>
+          ...and then one day, I found myself staring at an algorithm written in
+          Java, and I realized I was looking at pure poetry. Reading
+          well-written code is like listening to Bach- it's magic!
+        </p>
+        <p>
+          The current tools of my trade might be newer, but the journey they
+          accompany, through a world of language and ideas, isn't all that
+          different...and yes, pencil and paper still have a place for me, even
+          in the digital world.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/kfiddle">My GitHub repository</a>
+        <div class="projectLinks">
+          <article>
+            <a href="https://github.com/kfiddle/ken-virtual-pets-amok">
+              Virtual Pets Amok</a
+            >
+            <p>A game with OOP underneath...</p>
+            <img
+              src="assets\Screenshot 2020-09-28 170514.jpg"
+              alt="shot of Java code sample"
+            />
+          </article>
+
+          <article>
+            <a href="https://github.com/kfiddle/kjRummy">
+              Rummy Game in Python</a
+            >
+            <p>
+              One of my first- a two player console version of Rummy written in
+              Python
+            </p>
+            <img
+              src="assets\pythonSample.jpg"
+              alt="shot of sample code in Python"
+            />
+          </article>
+
+          <article>
+            <a href="https://github.com/kfiddle/wcci-ken-bank-teller">
+              Bank Teller</a
+            >
+            <p>An exploration of class structure in Java</p>
+          </article>
+          <article>
+            <a href="https://github.com/kfiddle/FortuneProject">
+              Fortune Project</a
+            >
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <ul id="contact">
+          <li>kenjfiddle@gmail.com</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy ken johnston 2020</p>
+    </footer>
   </body>
 </html>
