@@ -11,6 +11,20 @@ html {
   margin-top: 3em;
 }
 
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+header {
+  outline-offset: 25em;
+  font-weight: bold;
+}
+
+span {
+  font-size: 2em;
+  font-weight: bold;
+}
 h1 {
   font-size: 3em;
   padding: 0.5em 0;
@@ -26,7 +40,7 @@ body {
 main {
   padding-left: 2em;
   background-color: cadetblue;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -70,11 +84,13 @@ section {
 }
 
 section img {
-  width: 100%;
+  width: 50%;
+  transition: 2s;
 }
 
-section img:hover {
-  width: auto;
+.onHover {
+  width: 100%;
+  transition: 2s;
 }
 
 section a {
@@ -87,6 +103,20 @@ section a:hover {
 
 main section #contact {
   list-style-type: none;
+}
+
+#ambitionButton {
+  display: block;
+  margin: auto;
+  transition: 2s;
+}
+
+.bloom {
+  font-size: 300%;
+}
+
+#projects {
+  display: none;
 }
 
 footer {
