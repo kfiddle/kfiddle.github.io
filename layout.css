@@ -19,16 +19,24 @@ html {
 header {
   outline-offset: 25em;
   font-weight: bold;
+  text-shadow: 1.2px 1.2px rgb(139, 196, 128);
 }
 
 span {
   font-size: 2em;
   font-weight: bold;
 }
+
 h1 {
   font-size: 3em;
   padding: 7px 0;
 }
+
+h2 {
+  text-shadow: 0.6px 0.6px;
+  padding-bottom: 5px;
+}
+
 body {
   background-color: beige;
 }
@@ -64,7 +72,8 @@ main {
 
 p {
   text-indent: 2em;
-  padding: 1em;
+  padding: 0.8em;
+  text-shadow: 0.4px 0.4px;
 }
 
 nav {
@@ -113,6 +122,8 @@ section img {
 
 section a {
   text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0.3px 0.3px;
 }
 
 section a:hover {
