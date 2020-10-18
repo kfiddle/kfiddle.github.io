@@ -27,16 +27,34 @@ span {
 }
 h1 {
   font-size: 3em;
-  padding: 0.5em 0;
+  padding: 7px 0;
 }
 body {
   background-color: beige;
+}
+
+.bioButtonShow {
+  background-color: rgb(40, 31, 97);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2),
+    0 20px 40px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 7px;
+  color: rgb(189, 218, 122);
+  padding: 0 2.5em;
 }
 
 #aboutMe img {
   max-width: 50%;
   border: solid 5px;
 }
+
+.aboutMeModalBox {
+  display: none;
+}
+
+.aboutMeModalBoxShow {
+  display: block;
+}
+
 main {
   padding-left: 2em;
   background-color: cadetblue;
@@ -106,14 +124,11 @@ main section #contact {
 }
 
 #ambitionButton {
-  display: block;
-  text-align: center;
-  margin: auto;
   transition: 2s;
 }
 
 .bloom {
-  font-size: 320%;
+  font-size: 300%;
   font-weight: bold;
   color: yellow;
   transition: 2s;

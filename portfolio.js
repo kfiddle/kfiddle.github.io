@@ -3,6 +3,13 @@ const ambition = document.getElementById('ambitionButton');
 const projectSection = document.querySelector('.projects');
 const aboutMeSection = document.getElementById('aboutMe');
 const finalStatement = document.createElement('h3');
+const bioButton = document.querySelector('.bioButtonShow');
+const modalBioBox = document.querySelector('.aboutMeModalBox');  
+
+
+bioButton.addEventListener('click', showBio);
+ambition.addEventListener('click', ambitionButtonFun);
+
 
 for (let i = 0; i < codeScreenshots.length; i++) {
     codeScreenshots[i].addEventListener('mouseover', grow);
@@ -17,8 +24,10 @@ for (let i = 0; i < codeScreenshots.length; i++) {
     }
  };
 
- ambition.addEventListener('click', ambitionButtonFun);
- 
+ function showBio(e) {
+     bioButton.style.display = "none";
+     modalBioBox.style.display = "block";
+    } 
 
 
 
