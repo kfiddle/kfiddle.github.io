@@ -19,19 +19,15 @@ for (let i = 0; i < codeScreenshots.length; i++) {
 
  ambition.addEventListener('click', ambitionButtonFun);
  
-function vanish(e) {
-    ambition.classList.remove('bloom');
-    ambition.style.fontWeight = "light";
-    ambition.innerText = "But until then, here's what I've done so far...";
-    ambition.style.fontSize = "1em";
-    ambition.style.color = 'red';
-    setTimeout(displayProjects, 2100);
-}
+
+
+
 
  function ambitionButtonFun(e) {
     ambition.classList.add('bloom');
     ambition.innerText = "to become a JavaScript Showoff!";
     setTimeout(finalStatementLoop, 1300);
+    setTimeout(displayProjects, 2200);
 
     function finalStatementLoop() {
         for (let i = 1; i < 4; i++){
@@ -47,6 +43,8 @@ var displayProjects = function() {
 
 function but() {
 finalStatement.innerText = "But";
+finalStatement.style.color = "darkblue";
+finalStatement.style.fontSize = "2em";
 aboutMeSection.appendChild(finalStatement);
 
 }
@@ -59,8 +57,4 @@ function until() {
 function then() {
     finalStatement.innerText = "But until then...";
     aboutMeSection.appendChild(finalStatement);
-}
-
-function redFlash(finalStatemen) {
-finalStatement.style.color = "red;
 }

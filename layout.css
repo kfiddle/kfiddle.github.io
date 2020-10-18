@@ -76,8 +76,8 @@ nav a:hover {
   grid-gap: 1em;
 }
 
-article {
-  /* border: solid black 2px; */
+.codeScreenShots {
+  border: solid black 2px;
 }
 section {
   padding-top: 2em;
@@ -89,7 +89,7 @@ section img {
 }
 
 .onHover {
-  width: 100%;
+  width: 150%;
   transition: 2s;
 }
 
