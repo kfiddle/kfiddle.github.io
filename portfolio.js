@@ -8,6 +8,17 @@ const modalBioBox = document.querySelector('.aboutMeModalBox');
 const introToProjects = document.createElement('h4');
 const words=["Here's", " what", " I've", " done", " so", " far..."]
 
+const createFortuneTellerLink = document.getElementById('fortuneTellerLink');
+const createWineReviewsLink = document.getElementById('wineReviewsLink');
+const createVirtualPetLink = document.getElementById('virtualPetLink');
+const createPythonLink = document.getElementById('pythonLink');
+
+// createFortuneTellerLink.addEventListener('mouseover', spin1);
+// createWineReviewsLink.addEventListener('mouseover', spin2);
+// createVirtualPetLink.addEventListener('mouseover', spin3);
+// createPythonLink.addEventListener('mouseover', spin4);
+
+
 bioButton.addEventListener('click', showBio);
 ambition.addEventListener('click', ambitionButtonFun);
 
@@ -35,7 +46,7 @@ for (let i = 0; i < codeScreenshots.length; i++) {
 
  function ambitionButtonFun(e) {
     ambition.classList.add('bloom');
-    ambition.innerText = "to become a JavaScript Show-off!";
+    ambition.innerText = "to become a JavaScript Wizard!";
     setTimeout(finalStatementLoop, 1300);
     setTimeout(introToProjectsLoop, 3000);
     setTimeout(displayProjects, 4200);
