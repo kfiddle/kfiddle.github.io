@@ -13,10 +13,21 @@ const createWineReviewsLink = document.getElementById('wineReviewsLink');
 const createVirtualPetLink = document.getElementById('virtualPetLink');
 const createPythonLink = document.getElementById('pythonLink');
 
-// createFortuneTellerLink.addEventListener('mouseover', spin1);
-// createWineReviewsLink.addEventListener('mouseover', spin2);
-// createVirtualPetLink.addEventListener('mouseover', spin3);
-// createPythonLink.addEventListener('mouseover', spin4);
+const bottom = document.getElementById('bottom');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+const featuredImage = document.getElementById('featuredImage');
+
+ createFortuneTellerLink.addEventListener('mouseover', spin1);
+ createWineReviewsLink.addEventListener('mouseover', spin2);
+ createVirtualPetLink.addEventListener('mouseover', spin3);
+ createPythonLink.addEventListener('mouseover', spin4);
+
+ createFortuneTellerLink.addEventListener('mouseout', originalColor);
+ createWineReviewsLink.addEventListener('mouseout', originalColor);
+ createVirtualPetLink.addEventListener('mouseout', originalColor);
+ createPythonLink.addEventListener('mouseout', originalColor);
+
 
 
 bioButton.addEventListener('click', showBio);
@@ -94,6 +105,50 @@ function printAWord(word) {
     introToProjects.style.color = "darkblue";
     aboutMeSection.appendChild(introToProjects);
 
+}
+
+function spin1(e) {
+    createFortuneTellerLink.style.color="red";
+    featuredImage.src="assets/fortuneTellerSample.jpg";
+    third.src="assets/wineReviewsSample.jpg";
+    second.src="assets/virtualPet.jpg";
+    bottom.src="assets/pythonSample.jpg";
+}
+
+function spin2(e) {
+    createWineReviewsLink.style.color= "red";
+    featuredImage.src="assets/wineReviewsSample.jpg";
+    third.src="assets/virtualPet.jpg";
+    second.src="assets/virtualPet.jpg";
+    bottom.src="assets/fortuneTellerSample.jpg";
+}
+
+function spin3(e) {
+    createVirtualPetLink.style.color="red";
+    featuredImage.src="assets/virtualPet.jpg";
+    third.src="assets/pythonSample.jpg";
+    second.src="assets/fortuneTellerSample.jpg";
+    bottom.src="assets/wineReviewsSample.jpg";
+}
+
+function spin4(e) {
+    createPythonLink.style.color="red";
+    featuredImage.src="assets/pythonSample.jpg";
+    third.src="assets/fortuneTellerSample.jpg";
+    second.src="assets/wineReviewsSample.jpg";
+    bottom.src="assets/virtualPet.jpg";
+}
+
+function originalColor(e) {
+    if (createFortuneTellerLink.style.color ==="red"){
+        createFortuneTellerLink.style.color = "black";
+    } else if (createWineReviewsLink.style.color==="red"){
+        createWineReviewsLink.style.color="black";
+    } else if (createVirtualPetLink.style.color==="red"){
+        createVirtualPetLink.style.color="black";
+    } else if (createPythonLink.style.color==="red") {
+        createPythonLink.style.color="black";
+    }
 }
 
 
