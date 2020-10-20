@@ -160,19 +160,19 @@ function originalState(e) {
     if (createFortuneTellerLink.style.color ==="red"){
         createFortuneTellerLink.style.color = "black";
         createFortuneTellerLink.innerText="FortuneTeller in Java";
-        fortuneDescription.classList.add('hidden');
+        //fortuneDescription.classList.add('hidden');
     } else if (createWineReviewsLink.style.color==="red"){
         createWineReviewsLink.style.color="black";
         createWineReviewsLink.innerText="Wine Review Site";
-        wineDescription.classList.add('hidden');
+        //wineDescription.classList.add('hidden');
     } else if (createVirtualPetLink.style.color==="red"){
         createVirtualPetLink.style.color="black";
         createVirtualPetLink.innerText="Virtual Pet in Java";
-        virtualPetDescription.classList.add('hidden');
+        //virtualPetDescription.classList.add('hidden');
     } else if (createPythonLink.style.color==="red") {
         createPythonLink.style.color="black";
         createPythonLink.innerText="Rummy Game in Python";
-        pythonDescription.classList.add('hidden');
+        //pythonDescription.classList.add('hidden');
     }
 
     
@@ -184,22 +184,36 @@ function zoomOnFortune(e) {
     featuredImage.classList.add('featureChosenShot');
     fortuneDescription.classList.remove('hidden');
     fortuneDescription.classList.add('codeDescriptionShow');
+    pythonDescription.classList.add('hidden');
+    wineDescription.classList.add('hidden');
+    virtualPetDescription.classList.add('hidden');
+
 }
 
 function zoomOnWine(e) {
     featuredImage.classList.add('featureChosenShot');
     wineDescription.classList.remove('hidden');
     wineDescription.classList.add('codeDescriptionShow');
+    pythonDescription.classList.add('hidden');
+    virtualPetDescription.classList.add('hidden')
+    fortuneDescription.classList.add('hidden');
 }
 
 function zoomOnVirtualPet(e) {
     featuredImage.classList.add('featureChosenShot');
     virtualPetDescription.classList.remove('hidden');
     virtualPetDescription.classList.add('codeDescriptionShow');
+    pythonDescription.classList.add('hidden');
+    wineDescription.classList.add('hidden');
+    fortuneDescription.classList.add('hidden');
+
 }
 
 function zoomOnPython(e) {
     featuredImage.classList.add('featureChosenShot');
     pythonDescription.classList.remove('hidden');
     pythonDescription.classList.add('codeDescriptionShow');
+    wineDescription.classList.add('hidden');
+    fortuneDescription.classList.add('hidden');
+    virtualPetDescription.classList.add('hidden')
 }
