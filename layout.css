@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 html {
   font-size: 18px;
   margin-top: 3em;
@@ -36,6 +40,11 @@ h1 {
 h2 {
   text-shadow: 0.6px 0.6px;
   padding-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(173, 44, 51);
 }
 
 body {
@@ -205,6 +214,30 @@ main section #contact {
   right: 11%;
 }
 
+.showSample {
+  display: block;
+}
+/* 
+#upCloseCodeSample {
+  width: 150%;
+} */
+
+.codeDescriptionShow {
+  position: relative;
+  font-size: 1.3em;
+  color: darkblue;
+  font-weight: bolder;
+  top: 13%;
+}
+
+.featureChosenShot {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 35%;
+  height: 80%;
+  transition: 1s;
+}
 footer {
   margin-top: 2em;
   margin-bottom: 1em;

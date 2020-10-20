@@ -6,12 +6,20 @@ const finalStatement = document.createElement('h3');
 const bioButton = document.querySelector('.bioButtonShow');
 const modalBioBox = document.querySelector('.aboutMeModalBox');  
 const introToProjects = document.createElement('h4');
-const words=["Here's", " what", " I've", " done", " so", " far..."]
+
+const fortuneDescription = document.getElementById('fortuneDescription');
+const wineDescription = document.getElementById('wineDescription');
+const virtualPetDescription = document.getElementById('virtualPetDescription');
+const pythonDescription = document.getElementById('pythonDescription');
+
+const words=["Here's", " what", " I've", " done", " so", " far.", " (Hover", " or", " click...", " below)"]
 
 const createFortuneTellerLink = document.getElementById('fortuneTellerLink');
 const createWineReviewsLink = document.getElementById('wineReviewsLink');
 const createVirtualPetLink = document.getElementById('virtualPetLink');
 const createPythonLink = document.getElementById('pythonLink');
+const codeSampleZoom = document.getElementById('codeSampleZoom');
+
 
 const bottom = document.getElementById('bottom');
 const second = document.getElementById('second');
@@ -23,12 +31,15 @@ const featuredImage = document.getElementById('featuredImage');
  createVirtualPetLink.addEventListener('mouseover', spin3);
  createPythonLink.addEventListener('mouseover', spin4);
 
- createFortuneTellerLink.addEventListener('mouseout', originalColor);
- createWineReviewsLink.addEventListener('mouseout', originalColor);
- createVirtualPetLink.addEventListener('mouseout', originalColor);
- createPythonLink.addEventListener('mouseout', originalColor);
+ createFortuneTellerLink.addEventListener('mouseout', originalState);
+ createWineReviewsLink.addEventListener('mouseout', originalState);
+ createVirtualPetLink.addEventListener('mouseout', originalState);
+ createPythonLink.addEventListener('mouseout', originalState);
 
-
+createFortuneTellerLink.addEventListener('click', zoomOnFortune);
+createWineReviewsLink.addEventListener('click', zoomOnWine);
+createVirtualPetLink.addEventListener('click', zoomOnVirtualPet);
+createPythonLink.addEventListener('click', zoomOnPython);
 
 bioButton.addEventListener('click', showBio);
 ambition.addEventListener('click', ambitionButtonFun);
@@ -70,7 +81,7 @@ for (let i = 0; i < codeScreenshots.length; i++) {
     }
 
     function introToProjectsLoop() {
-        for (let i = 0; i < 6; i++){
+        for (let i = 0; i < 10; i++){
             setTimeout(printAWord, i*100, words[i]);
         }
     }
@@ -109,6 +120,7 @@ function printAWord(word) {
 
 function spin1(e) {
     createFortuneTellerLink.style.color="red";
+    createFortuneTellerLink.innerText="FortuneTeller in Java _____________________";
     featuredImage.src="assets/fortuneTellerSample.jpg";
     third.src="assets/wineReviewsSample.jpg";
     second.src="assets/virtualPet.jpg";
@@ -117,6 +129,7 @@ function spin1(e) {
 
 function spin2(e) {
     createWineReviewsLink.style.color= "red";
+    createWineReviewsLink.innerText="Wine Review Site ________________________";
     featuredImage.src="assets/wineReviewsSample.jpg";
     third.src="assets/virtualPet.jpg";
     second.src="assets/virtualPet.jpg";
@@ -125,6 +138,7 @@ function spin2(e) {
 
 function spin3(e) {
     createVirtualPetLink.style.color="red";
+    createVirtualPetLink.innerText="Virtual Pet in Java ________________________";
     featuredImage.src="assets/virtualPet.jpg";
     third.src="assets/pythonSample.jpg";
     second.src="assets/fortuneTellerSample.jpg";
@@ -133,23 +147,59 @@ function spin3(e) {
 
 function spin4(e) {
     createPythonLink.style.color="red";
+    createPythonLink.innerText="Rummy Game in Python __________________";
     featuredImage.src="assets/pythonSample.jpg";
     third.src="assets/fortuneTellerSample.jpg";
     second.src="assets/wineReviewsSample.jpg";
     bottom.src="assets/virtualPet.jpg";
 }
 
-function originalColor(e) {
+function originalState(e) {
+    featuredImage.classList.remove('featureChosenShot');
+
     if (createFortuneTellerLink.style.color ==="red"){
         createFortuneTellerLink.style.color = "black";
+        createFortuneTellerLink.innerText="FortuneTeller in Java";
+        fortuneDescription.classList.add('hidden');
     } else if (createWineReviewsLink.style.color==="red"){
         createWineReviewsLink.style.color="black";
+        createWineReviewsLink.innerText="Wine Review Site";
+        wineDescription.classList.add('hidden');
     } else if (createVirtualPetLink.style.color==="red"){
         createVirtualPetLink.style.color="black";
+        createVirtualPetLink.innerText="Virtual Pet in Java";
+        virtualPetDescription.classList.add('hidden');
     } else if (createPythonLink.style.color==="red") {
         createPythonLink.style.color="black";
+        createPythonLink.innerText="Rummy Game in Python";
+        pythonDescription.classList.add('hidden');
     }
+
+    
+
+
 }
 
+function zoomOnFortune(e) {
+    featuredImage.classList.add('featureChosenShot');
+    fortuneDescription.classList.remove('hidden');
+    fortuneDescription.classList.add('codeDescriptionShow');
+}
 
+function zoomOnWine(e) {
+    featuredImage.classList.add('featureChosenShot');
+    wineDescription.classList.remove('hidden');
+    wineDescription.classList.add('codeDescriptionShow');
+}
 
+function zoomOnVirtualPet(e) {
+    featuredImage.classList.add('featureChosenShot');
+    virtualPetDescription.classList.remove('hidden');
+    virtualPetDescription.classList.add('codeDescriptionShow');
+}
+
+function zoomOnPython(e) {
+    featuredImage.classList.add('featureChosenShot');
+    pythonDescription.classList.remove('hidden');
+    pythonDescription.classList.add('codeDescriptionShow');
+}
