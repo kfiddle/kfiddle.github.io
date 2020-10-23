@@ -212,7 +212,7 @@
 
    .featureChosenShot {
     position: absolute;
-    top:10%;
+    top:15vw;
     right:11%;
     width: 35%;
     height: 60%;
@@ -237,7 +237,36 @@
     margin-bottom: 1em;
     background: #999;
     color: #fff;
-    padding: 1em;
+    padding:0;
     text-align: center;
   }
+  
+  .footerMediaLinks{
+      padding:0;
+      margin:0;
+  }
+
+  .footerMediaLinks a{
+      padding:0 3rem;
+  }
+
+  .fa-linkedin{
+    color:blue;
+}
+
+  @media only screen and (max-width: 1100px){
+    
+    *{
+        position: relative;
+
+    }
+    body{
+        display:grid;
+        grid-template-rows: auto;
+        }
+
+    .mainContainer{
+        max-width: 100%;
+    }
+}
   
