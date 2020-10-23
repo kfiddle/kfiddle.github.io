@@ -23,7 +23,7 @@ const codeSampleZoom = document.getElementById('codeSampleZoom');
 const bottom = document.getElementById('bottom');
 const second = document.getElementById('second');
 const third = document.getElementById('third');
-const featuredImage = document.getElementById('featuredImage');
+const featuredImage = document.querySelector('.featuredImage');
 
  createFortuneTellerLink.addEventListener('mouseover', spin1);
  createWineReviewsLink.addEventListener('mouseover', spin2);

@@ -112,13 +112,6 @@ nav a:hover {
   background: #666;
 }
 
-/* .projectLinks {
-  padding-top: 2em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-} */
-
 .codeScreenShots {
   border: solid black 2px;
 }
@@ -157,7 +150,9 @@ main section #contact {
   list-style-type: none;
 }
 
-#ambitionButton {
+.ambitionButton {
+  color: blue;
+  font-weight: 1.5em;
   transition: 2s;
 }
 
@@ -217,10 +212,6 @@ main section #contact {
 .showSample {
   display: block;
 }
-/* 
-#upCloseCodeSample {
-  width: 150%;
-} */
 
 .codeDescriptionShow {
   position: relative;
@@ -232,8 +223,8 @@ main section #contact {
 
 .featureChosenShot {
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 50%;
+  top: 50%;
   width: 35%;
   height: 80%;
   transition: 1s;
