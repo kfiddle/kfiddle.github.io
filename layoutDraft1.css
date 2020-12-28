@@ -59,6 +59,10 @@
     color: rgb(189, 218, 122);
     padding: 0 2.5em;
   }
+
+  .bioButtonShow:hover {
+    background-color: darkgoldenrod;
+  }
   
   #aboutMe {
     display: grid;
@@ -166,7 +170,7 @@
   #carouselAndLinksContainer {
     padding-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 4fr;
   }
   
   .picture {
@@ -206,7 +210,7 @@
   
    .featuredImage {
     position: absolute;
-    top: 65%;
+    top: 63%;
     right: 11%;
    }
 
@@ -253,6 +257,33 @@
   .fa-linkedin{
     color:blue;
 }
+
+#image4 {
+  position: absolute;
+  top: 47%;
+  right: 3%;
+}
+
+#image2 { 
+  position: absolute;
+  top: 57%;
+  right: 7%;
+}
+
+#image3 {  
+  position: absolute;
+  top: 51%;
+  right: 5%;
+}
+
+
+
+
+
+
+
+
+
 
   @media only screen and (max-width: 1100px){
     
