@@ -32,7 +32,7 @@ const redText = [
                 "Historical Currency Converter in Javascript __"];
 const blackText = [
                 "Rummy Game in Python",
-                "Journal App in Javascript, Spring MVC _________",
+                "Journal App in Javascript, Spring MVC",
                 "Wine Review Site with Spring MVC",
                 "Historical Currency Converter in Javascript"];
 
@@ -115,7 +115,7 @@ ambition.addEventListener('click', ambitionButtonFun);
      modalBioBox.style.display = "block";
 
      for (let i = 0; i < bioLetters.length; i++) {
-         setTimeout(printAmbition, i*75, bioLetters[i]);
+         setTimeout(printAmbition, i*40, bioLetters[i]);
      }
     } 
 

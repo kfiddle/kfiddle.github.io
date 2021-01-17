@@ -191,30 +191,26 @@
     display: grid;
   }
   
-  #bottom {
+  /* #bottom {
     position: absolute;
-    top: 50%;
+    top: 70%;
     right: 5%;
   }
   
   #second {
     position: absolute;
-    top: 55%;
+    top: 75%;
     right: 7%;
   }
   
   #third {
     position: absolute;
-    top: 60%;
+    top: 21%;
     right: 9%;
-  }
+  } */
   
   
-   .featuredImage {
-    position: absolute;
-    top: 63%;
-    right: 11%;
-   }
+   
 
    .featureChosenShot {
     position: absolute;
@@ -262,21 +258,26 @@
 
 #image4 {
   position: absolute;
-  top: 47%;
+  top: 70%;
   right: 3%;
+}
+#image3 {  
+  position: absolute;
+  top: 74%;
+  right: 5%;
 }
 
 #image2 { 
   position: absolute;
-  top: 57%;
+  top: 80%;
   right: 7%;
 }
 
-#image3 {  
+.featuredImage {
   position: absolute;
-  top: 51%;
-  right: 5%;
-}
+  top: 86%;
+  right: 11%;
+ }
 
 
 @media screen and (max-width: 600px) {
