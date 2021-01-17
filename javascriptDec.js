@@ -26,12 +26,12 @@ const project1Link = document.getElementById('project1Link');
 
 const redText = [
                 "Rummy Game in Python __________________",
-                "Virtual Pet in Java ________________________",
+                "Journal App in Javascript, Spring MVC _________",
                 "Wine Review Site with Spring MVC ______________",
                 "Historical Currency Converter in Javascript __"];
 const blackText = [
                 "Rummy Game in Python",
-                "Virtual Pet in Java",
+                "Journal App in Javascript, Spring MVC _________",
                 "Wine Review Site with Spring MVC",
                 "Historical Currency Converter in Javascript"];
 
@@ -45,7 +45,7 @@ const image1 = document.getElementById('image1');
 let featuredImages = [image1, image2, image3, image4];
 
 const shot1 = "assets/pythonSample.jpg";
-const shot2 = "assets/virtualPet.jpg";
+const shot2 = "assets/field-guide-screenshot.jpg";
 const shot3 = "assets/wineReviewsSample.jpg";
 const shot4 = "assets/colonialConverterScreenShot.jpg";
 
