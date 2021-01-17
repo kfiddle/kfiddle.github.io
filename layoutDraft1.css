@@ -190,34 +190,14 @@
   .projectsDisplay {
     display: grid;
   }
-  
-  /* #bottom {
-    position: absolute;
-    top: 70%;
-    right: 5%;
-  }
-  
-  #second {
-    position: absolute;
-    top: 75%;
-    right: 7%;
-  }
-  
-  #third {
-    position: absolute;
-    top: 21%;
-    right: 9%;
-  } */
-  
-  
-   
+
 
    .featureChosenShot {
     position: absolute;
-    top:15vw;
-    right:11%;
+    bottom: 25v;
+    right:25%;
     width: 35%;
-    height: 60%;
+    height: 80%;
     transition: 1s;
   }
 
