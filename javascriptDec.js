@@ -5,12 +5,13 @@ const projectSection = document.querySelector('.projects');
 const aboutMeSection = document.getElementById('aboutMe');
 const finalStatement = document.createElement('h3');
 const bioButton = document.querySelector('.bioButtonShow');
+
 const modalBioBox = document.querySelector('.aboutMeModalBox');  
 const introToProjects = document.createElement('h4');
 const nextSentenceAttach = document.getElementById('nextSentenceIntro');
 
-const bioLetters = ["-","C","l","i","c","k","*","h","e","r","e","*","t","o","*","d","i","s","c","o","v","e","r","*","m","y","*","c",
-"u","r","r","e","n","t","*","a","m","b","i","t","i","o","n","-"];
+const bioLetters = ["C","l","i","c","k","*","h","e","r","e","*","t","o","*","d","i","s","c","o","v","e","r","*","m","y","*","c",
+"u","r","r","e","n","t","*","a","m","b","i","t","i","o","n"];
 
 const project4Description = document.getElementById('project4Description');
 const project3Description = document.getElementById('project3Description');

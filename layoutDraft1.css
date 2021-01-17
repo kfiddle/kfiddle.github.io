@@ -70,8 +70,9 @@
   }
   
   #aboutMe img {
+    box-shadow: 2px 2px 1px #381c1c;
     max-width: 100%;
-    border: solid 5px;
+    /* border: solid 5px; */
   }
   
   .aboutMeModalBox {
@@ -155,6 +156,7 @@
   }
   
   .ambitionButton {
+    padding-top: 6px;
     color: blue;
     font-weight: 1.5em;
     transition: 2s;
