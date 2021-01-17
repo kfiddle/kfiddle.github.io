@@ -87,15 +87,26 @@ for (let i = 0; i < projectLinks.length; i++) {
 
     projectLinks[i].addEventListener('mouseout', function () {
         featuredImages[0].classList.remove('featureChosenShot');
+        featuredImages[0].classList.add('featuredImage');
         projectLinks[i].style.color = "black";
         projectLinks[i].innerText = blackText[i];
-        featuredImages[0].classList.remove('featureChosenShot');
+        // featuredImages[0].classList.remove('featureChosenShot');
     })
 
     projectLinks[i].addEventListener('click', function() {
         header.style.color="#999";
         header.style.backgroundColor="white";
+        image1.classList.remove('featuredImage');
         image1.classList.add('featureChosenShot');
+
+        // .featureChosenShot {
+        //     position: absolute;
+        //     bottom: 25v;
+        //     right:25%;
+        //     width: 35%;
+        //     height: 80%;
+        //     transition: 1s;
+        //   }
 
         for (let j = 0; j < projectDescriptions.length; j++) {
             projectDescriptions[j].classList.add('hidden');

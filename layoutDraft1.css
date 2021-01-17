@@ -193,9 +193,10 @@
 
 
    .featureChosenShot {
+    
     position: absolute;
-    bottom: 25v;
-    right:25%;
+    right:5%;
+    top: 30%;
     width: 35%;
     height: 80%;
     transition: 1s;
