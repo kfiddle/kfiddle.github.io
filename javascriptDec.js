@@ -5,6 +5,8 @@ const projectSection = document.querySelector('.projects');
 const aboutMeSection = document.getElementById('aboutMe');
 const finalStatement = document.createElement('h3');
 const bioButton = document.querySelector('.bioButtonShow');
+const phoneQuery = window.matchMedia("(max-width:600px)");
+
 
 const modalBioBox = document.querySelector('.aboutMeModalBox');  
 const introToProjects = document.createElement('h4');
@@ -122,13 +124,18 @@ bioButton.addEventListener('click', showBio);
 ambition.addEventListener('click', ambitionButtonFun);
 
  function showBio(e) {
-     bioButton.style.display = "none";
-     modalBioBox.style.display = "block";
+    if (window.matchMedia("(max-width: 700px)").matches) {
+            window.open("/projects.html");
 
-     for (let i = 0; i < bioLetters.length; i++) {
-         setTimeout(printAmbition, i*40, bioLetters[i]);
-     }
+    } else {
+        bioButton.style.display = "none";
+        modalBioBox.style.display = "block";
+
+        for (let i = 0; i < bioLetters.length; i++) {
+            setTimeout(printAmbition, i*40, bioLetters[i]);
+        }
     } 
+}
 
     function printAmbition(letter){
         if (letter === "*"){
@@ -170,8 +177,11 @@ function printWords(word){
     introToProjects.style.fontSize = "1.5em";
     introToProjects.style.color = "darkblue";
     aboutMeSection.appendChild(introToProjects);
-
 }
+
+
+
+
 
 
 
