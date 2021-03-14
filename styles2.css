@@ -1,0 +1,342 @@
+* {
+    font-family: sans-serif;
+    line-height: 1.6 em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  html {
+    font-size: 18px;
+    margin-top: 3em;
+  }
+  
+  .mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  
+  header {
+    outline-offset: 25em;
+    font-weight: bold;
+    text-shadow: 1.2px 1.2px rgb(139, 196, 128);
+    background-color: beige;
+  }
+  
+  span {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-size: 3em;
+    padding: 7px 0;
+  }
+  
+  h2 {
+    text-shadow: 0.6px 0.6px;
+    padding-bottom: 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(173, 44, 51);
+  }
+  
+  body {
+    background-color: rgb(148, 174, 175);
+
+  }
+  
+  .bioButtonShow {
+    background-color: rgb(40, 31, 97);
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2),
+      0 20px 40px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 7px;
+    color: rgb(189, 218, 122);
+    padding: 0 2.5em;
+  }
+
+  .bioButtonShow:hover {
+    background-color: darkgoldenrod;
+  }
+  
+  #aboutMe {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  
+  #aboutMe img {
+    box-shadow: 2px 2px 1px #381c1c;
+    max-width: 100%;
+    /* border: solid 5px; */
+  }
+ 
+  
+  main {
+    padding-left: 2em;
+    max-width: 100%;
+  }
+  
+  p {
+    text-indent: 2em;
+    padding: 0.8em;
+    text-shadow: 0.3px 0.3px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 2em;
+  }
+  
+  nav a:hover {
+    background: #666;
+  }
+  
+  .codeScreenShots {
+    border: solid black 2px;
+  }
+  section {
+    padding-top: 2em;
+  }
+  
+  section img {
+    width: 50%;
+    transition: 2s;
+  }
+  
+  #aboutMeSentences {
+    position: absolute;
+    top: 4em;
+    left: 55%;
+    right: 120px;
+  }
+  
+  .onHover {
+    width: 150%;
+    transition: 2s;
+  }
+  
+  section a {
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0.2px 0.2px;
+  }
+  
+  section a:hover {
+    color: darkred;
+  }
+  
+  main section #contact {
+    list-style-type: none;
+  }
+  
+  .ambitionButton {
+    padding-top: 6px;
+    color: blue;
+    font-weight: 1.5em;
+    transition: 2s;
+  }
+  
+  .bloom {
+    font-size: 300%;
+    font-weight: bold;
+    color: yellow;
+    transition: 2s;
+  }
+  
+  #carouselAndLinksContainer {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  
+  .picture {
+    border: solid black 4px;
+    width: 350px;
+    height: 380px;
+    transition: 1s;
+  }
+  
+  .projects {
+    display: none;
+    transition: 2s;
+  }
+  
+  .projectsDisplay {
+    display: grid;
+  }
+
+
+  .featureChosenShot {
+    
+    position: absolute;
+    right:5%;
+    top: 30%;
+    width: 35%;
+    height: 80%;
+    transition: 1s;
+  }
+
+
+  .showSample {
+    display: block;
+  }
+  
+  .codeDescriptionShow {
+    position: relative;
+    font-size: 1.3em;
+    color: darkblue;
+    font-weight: bolder;
+    top: 9%;
+  }
+  
+  footer {
+   
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: #999;
+    color: #fff;
+    padding:0;
+    text-align: center;
+  }
+  
+  .footerMediaLinks{
+      padding:0;
+      margin:0;
+  }
+
+  .footerMediaLinks a{
+      padding:0 3rem;
+  }
+
+  .fa-linkedin{
+    color:blue;
+}
+
+#image4 {
+  position: absolute;
+  top: 70%;
+  right: 3%;
+}
+#image3 {  
+  position: absolute;
+  top: 74%;
+  right: 5%;
+}
+
+#image2 { 
+  position: absolute;
+  top: 80%;
+  right: 7%;
+}
+
+.featuredImage {
+  position: absolute;
+  top: 86%;
+  right: 11%;
+ }
+
+
+@media screen and (max-width: 600px) {
+
+  body {
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: .85rem;
+  }
+
+  main {
+    display: block;
+    padding-left: 2%;
+  }
+
+  .mainContainer {
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+header {
+  max-width: 110%;
+}
+
+header h1 {
+  font-size: 1rem;
+}
+
+header span {
+  font-size: 1rem;
+}
+
+#aboutMe {
+  padding-top: 0;
+  margin-left: 0;
+}
+
+#aboutMe img {
+width:100%;
+}
+
+.bioButtonShow {
+  margin-top: 5%;
+  height: 15%;
+  margin-left: 18%;
+}
+
+#bioButtonText {
+  font-size: .75rem;
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 7%;
+  height: 10%;
+}
+
+
+
+#contactSection {
+  margin-top: 15%;
+  padding-top: 0;
+  
+}
+
+#contact {
+  font-size: .75rem;
+}
+
+
+}
+
+
+  /* @media only screen and (max-width: 1100px){
+    
+    *{
+        position: relative;
+
+    }
+    body{
+        display:grid;
+        grid-template-rows: auto;
+        }
+
+    .mainContainer{
+        max-width: 100%;
+    }
+} */
+  
