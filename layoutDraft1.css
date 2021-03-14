@@ -88,7 +88,6 @@
     padding-left: 2em;
     background-color: cadetblue;
     max-width: 100%;
-    
   }
   
   p {
@@ -192,7 +191,7 @@
   }
 
 
-   .featureChosenShot {
+  .featureChosenShot {
     
     position: absolute;
     right:5%;
@@ -212,10 +211,11 @@
     font-size: 1.3em;
     color: darkblue;
     font-weight: bolder;
-    top: 13%;
+    top: 9%;
   }
   
   footer {
+   
     margin-top: 2em;
     margin-bottom: 1em;
     background: #999;

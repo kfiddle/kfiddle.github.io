@@ -1,5 +1,6 @@
 const codeScreenshots = document.querySelectorAll('.codeScreenShots');
 const header = document.querySelector('header');
+const mainContainer = document.querySelector('main');
 const ambition = document.querySelector('.ambitionButton');
 const projectSection = document.querySelector('.projects');
 const aboutMeSection = document.getElementById('aboutMe');
@@ -7,6 +8,8 @@ const finalStatement = document.createElement('h3');
 const bioButton = document.querySelector('.bioButtonShow');
 const phoneQuery = window.matchMedia("(max-width:600px)");
 
+console.log(mainContainer.offsetHeight);
+console.log(window.innerHeight);
 
 const modalBioBox = document.querySelector('.aboutMeModalBox');  
 const introToProjects = document.createElement('h4');
@@ -92,7 +95,6 @@ for (let i = 0; i < projectLinks.length; i++) {
         featuredImages[0].classList.add('featuredImage');
         projectLinks[i].style.color = "black";
         projectLinks[i].innerText = blackText[i];
-        // featuredImages[0].classList.remove('featureChosenShot');
     })
 
     projectLinks[i].addEventListener('click', function() {
@@ -100,15 +102,6 @@ for (let i = 0; i < projectLinks.length; i++) {
         header.style.backgroundColor="white";
         image1.classList.remove('featuredImage');
         image1.classList.add('featureChosenShot');
-
-        // .featureChosenShot {
-        //     position: absolute;
-        //     bottom: 25v;
-        //     right:25%;
-        //     width: 35%;
-        //     height: 80%;
-        //     transition: 1s;
-        //   }
 
         for (let j = 0; j < projectDescriptions.length; j++) {
             projectDescriptions[j].classList.add('hidden');
@@ -146,6 +139,7 @@ ambition.addEventListener('click', ambitionButtonFun);
 
  function ambitionButtonFun(e) {
     ambition.classList.add('bloom');
+    deepenContainer();
     ambition.innerText = "to become a JavaScript Wizard!";
     
     setTimeout(firstIntroToProjectsLoop, 1300);
@@ -179,10 +173,15 @@ function printWords(word){
     aboutMeSection.appendChild(introToProjects);
 }
 
+function deepenContainer() {
+    for (let i = 75; i < 110; i++) {
+        setTimeout(setContainerHeight, i*25, i);
+    }
+}
 
-
-
-
+function setContainerHeight(i) {
+    mainContainer.style.height = i + "vh";
+}
 
 
 
